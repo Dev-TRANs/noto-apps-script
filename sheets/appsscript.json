@@ -7,4 +7,4 @@
     "oauthScopes": [
         "https://www.googleapis.com/auth/script.external_request"
     ]
-  }
+}
