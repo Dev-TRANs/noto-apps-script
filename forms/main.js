@@ -1,4 +1,4 @@
-function onSubmitForm(e){
+function onFormSubmit(e){
     const sheetId = PropertiesService.getScriptProperties().getProperty("SHEET_ID");
     const deployHook = PropertiesService.getScriptProperties().getProperty("VERCEL_DEPLOY_HOOK");
     const sheet = SpreadsheetApp.openById(sheetId).getSheetByName("images")
