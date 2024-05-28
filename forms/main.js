@@ -1,6 +1,6 @@
 function onFormSubmit(e){
     const sheetId = PropertiesService.getScriptProperties().getProperty("SHEET_ID");
-    const deployHook = PropertiesService.getScriptProperties().getProperty("VERCEL_DEPLOY_HOOK");
+    const deployHook = PropertiesService.getScriptProperties().getProperty("CLOUDFLARE_DEPLOY_HOOK");
     const sheet = SpreadsheetApp.openById(sheetId).getSheetByName("images")
     const fileIds = e.response.getItemResponses()[0].getResponse()
     fileIds.forEach((fileId) => {
