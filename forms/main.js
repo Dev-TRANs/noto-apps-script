@@ -8,5 +8,5 @@ function onFormSubmit(e){
       file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
       sheet.getRange(sheet.getLastRow() + 1, 1, 1, 2).setValues([[`https://lh3.googleusercontent.com/d/${fileId}`, `=HYPERLINK("${file.getUrl()}","開く")`]]);
     })
-    UrlFetchApp.fetch(deployHook)
+    UrlFetchApp.fetch(deployHook, { "method" : "POST" })
 }
